@@ -5,15 +5,15 @@
 [![Code Climate](https://codeclimate.com/github/NodeBB/NodeBB/badges/gpa.svg)](https://codeclimate.com/github/NodeBB/NodeBB)
 [![](https://dcbadge.limes.pink/api/server/S2aAweHwDc?style=flat)](https://discord.gg/S2aAweHwDc)
 
-[**NodeBB Forum Software**](https://nodebb.org) is powered by Node.js and supports either Redis, MongoDB, or a PostgreSQL database. It utilizes web sockets for instant interactions and real-time notifications. NodeBB takes the best of the modern web: real-time streaming discussions, mobile responsiveness, and rich RESTful read/write APIs, while staying true to the original bulletin board/forum format &rarr; categorical hierarchies, local user accounts, and asynchronous messaging.
+[**Форумне програмне забезпечення NodeBB**](https://nodebb.org) працює на базі Node.js та підтримує бази даних Redis, MongoDB або PostgreSQL. Воно використовує вебсокети для миттєвої взаємодії та сповіщень у реальному часі. NodeBB поєднує в собі найкраще від сучасного вебу: обговорення в режимі реального часу, адаптивність для мобільних пристроїв та повноцінні інтерфейси RESTful API для читання й запису, залишаючись при цьому вірним класичному формату форумів (bulletin board) &rarr; категоріальна ієрархія, локальні облікові записи користувачів та асинхронний обмін повідомленнями.
 
-NodeBB by itself contains a "common core" of basic functionality, while additional functionality and integrations are enabled through the use of third-party plugins.
+Сам по собі NodeBB містить «спільне ядро» (common core) базових функцій, тоді як додаткові можливості та інтеграції реалізуються за допомогою сторонніх плагінів.
 
-### [Try it now](//try.nodebb.org) | [Documentation](//docs.nodebb.org)
+### [Спробувати зараз](//try.nodebb.org) | [Документація](//docs.nodebb.org)
 
-## Screenshots
+## Скріншоти
 
-NodeBB's theming engine is highly flexible and does not restrict your design choices. Check out some themed installs in these screenshots below:
+Рушій тем оформлення NodeBB є надзвичайно гнучким і не обмежує ваші дизайнерські рішення. Перегляньте кілька прикладів стилізованих встановлень на скріншотах нижче:
 
 [![](http://i.imgur.com/VCoOFyqb.png)](http://i.imgur.com/VCoOFyq.png)
 [![](http://i.imgur.com/FLOUuIqb.png)](http://i.imgur.com/FLOUuIq.png)
@@ -24,98 +24,98 @@ NodeBB's theming engine is highly flexible and does not restrict your design cho
 [![](http://i.imgur.com/LmHtPhob.png)](http://i.imgur.com/LmHtPho.png)
 [![](http://i.imgur.com/paiJPJkb.jpg)](http://i.imgur.com/paiJPJk.jpg)
 
-Our minimalist "Harmony" theme gets you going right away, no coding experience required.
+Наша мінімалістична тема «Harmony» дозволить вам почати роботу одразу, без необхідності мати досвід програмування.
 
-![Rendering of a NodeBB install on desktop and mobile devices](https://user-images.githubusercontent.com/923011/228570420-2a4db745-b20d-474a-a571-1b59259508ef.png)
+![Візуалізація встановленого форуму NodeBB на настільних та мобільних пристроях](https://user-images.githubusercontent.com/923011/228570420-2a4db745-b20d-474a-a571-1b59259508ef.png)
 
-## How can I follow along/contribute?
+## Як стежити за проєктом / зробити свій внесок?
 
-* If you are a developer, feel free to check out the source and submit pull requests. We also have a wide array of [plugins](http://community.nodebb.org/category/7/nodebb-plugins) which would be a great starting point for learning the codebase.
-* If you are a designer, [NodeBB needs themes](http://community.nodebb.org/category/10/nodebb-themes)! NodeBB's theming system allows extension of the base templates as well as styling via SCSS or CSS. NodeBB's base theme utilizes [Bootstrap 5](http://getbootstrap.com/) as a frontend toolkit.
-* If you know languages other than English you can help us translate NodeBB. We use [Transifex](https://explore.transifex.com/nodebb/nodebb/) for internationalization.
-* Please don't forget to **like**, **follow**, and **star our repo**! Join our growing [community](http://community.nodebb.org) to keep up to date with the latest NodeBB development.
+* Якщо ви розробник, ви можете вільно переглядати вихідний код і надсилати запити на злиття (pull requests). Ми також маємо широкий вибір [плагінів](http://community.nodebb.org/category/7/nodebb-plugins), які стануть чудовою відправною точкою для вивчення кодової бази.
+* Якщо ви designer, [NodeBB потребує тем](http://community.nodebb.org/category/10/nodebb-themes)! Система тем NodeBB дозволяє розширювати базові шаблони, а також стилізувати їх за допомогою SCSS або CSS. Базова тема NodeBB використовує [Bootstrap 5](http://getbootstrap.com/) як фронтенд-інструментарій.
+* Якщо ви знаєте інші мови, окрім англійської, ви можете допомогти нам з перекладом NodeBB. Для інтернаціоналізації ми використовуємо [Transifex](https://explore.transifex.com/nodebb/nodebb/).
+* Будь ласка, не забудьте поставити **лайк**, **підписатися** та **додати наш репозиторій у вибране (star)**! Приєднуйтесь до нашої зростаючої [спільноти](http://community.nodebb.org), щоб залишатися в курсі останніх новин розробки NodeBB.
 
-## Requirements
+## Вимоги
 
-NodeBB requires the following software to be installed:
+Для роботи NodeBB необхідно встановити таке програмне забезпечення:
 
-* A version of Node.js at least 22 or greater ([installation/upgrade instructions](https://github.com/nodesource/distributions))
-* MongoDB, version 5 or greater **or** Redis, version 7.2 or greater
-* If you are using [clustering](https://docs.nodebb.org/configuring/scaling/) you need Redis installed and configured.
-* nginx, version 1.3.13 or greater (**only if** intending to use nginx to proxy requests to a NodeBB)
-*  (Optional) [Docker](https://docs.docker.com/get-docker/) for container-based setup
+* Версія Node.js не нижче 22 ([інструкції зі встановлення/оновлення](https://github.com/nodesource/distributions))
+* MongoDB версії 5 або вище **або** Redis версії 7.2 або вище
+* Якщо ви використовуєте [кластеризацію](https://docs.nodebb.org/configuring/scaling/), вам потрібно встановити та налаштувати Redis.
+* nginx версії 1.3.13 або вище (**тільки якщо** ви плануєте використовувати nginx для проксування запитів до NodeBB)
+* (Необов'язково) [Docker](https://docs.docker.com/get-docker/) для розгортання в контейнерах
 
-> Installation steps vary by operating system. Please follow the official documentation links above.
+> Процес встановлення залежить від операційної системи. Будь ласка, перейдіть за посиланнями на офіційну документацію вище.
 
-## Installation
+## Встановлення
 
-[Please refer to platform-specific installation documentation](https://docs.nodebb.org/installing/os).
-If installing via the cloud (or using Docker), [please see cloud-based installation documentation](https://docs.nodebb.org/installing/cloud/).
+[Будь ласка, зверніться до документації зі встановлення для конкретної платформи](https://docs.nodebb.org/installing/os).
+Якщо встановлення виконується у хмарі (або за допомогою Docker), [дивіться документацію зі встановлення у хмарі](https://docs.nodebb.org/installing/cloud/).
 
-## Development Setup Overview
+## Огляд налаштування для розробки
 
->  NodeBB uses a CLI-based setup and does not run via standard `npm start`.
+> NodeBB використовує налаштування на базі CLI (інтерфейсу командного рядка) і не запускається за допомогою стандартної команди `npm start`.
 
-You can run NodeBB locally in two ways:
+Ви можете запустити NodeBB локально двома способами:
 
-### Option 1: Native Setup (Recommended for Beginners & Contributors)
+### Варіант 1: Локальне (нативне) встановлення (рекомендовано для новачків та контриб'юторів)
 
-This approach helps you understand how NodeBB works internally.
+Цей підхід допоможе вам зрозуміти, як влаштований NodeBB зсередини.
 
-**Basic flow:**
-1. Clone the repository ```` https://github.com/NodeBB/NodeBB.git ````
-2. Run the setup script ```` cd NodeBB ```` ```` ./nodebb setup ````
-3. Start the application  ```` ./nodebb start ````
+**Основний процес:**
+1. Клонуйте репозиторій ```` https://github.com/NodeBB/NodeBB.git ````
+2. Запустіть скрипт налаштування ```` cd NodeBB ```` ```` ./nodebb setup ````
+3. Запустіть додаток  ```` ./nodebb start ````
 
-**During setup, you will configure:**
-   - Database (MongoDB / Redis)
-   - Admin account
-   - Port (default: 4567)
+**Під час налаштування ви вкажете конфігурацію для:**
+   - Бази даних (MongoDB / Redis)
+   - Облікового запису адміністратора
+   - Порту (за замовчуванням: 4567)
 
-###  Option 2: Docker Setup (Quick & Isolated)
+### Варіант 2: Встановлення через Docker (швидке та ізольоване)
 
-> Requires Docker to be installed: https://docs.docker.com/get-docker/
+> Вимагає встановленого Docker: https://docs.docker.com/get-docker/
 
-Run:
+Запустіть:
 
 ```bash
 docker-compose up
-````
+```
 
-This will start NodeBB along with required services at: ```` http://localhost:4567 ````
+Це запустить NodeBB разом із необхідними сервісами за адресою: ```` http://localhost:4567 ````
 
-**For more details, see: https://docs.nodebb.org**
+**Для отримання детальнішої інформації дивіться: https://docs.nodebb.org**
 
-## Securing NodeBB
+## Захист NodeBB
 
-It is important to ensure that your NodeBB and database servers are secured. Bear these points in mind:
+Важливо переконатися, що ваші сервери NodeBB та баз даних захищені. Зверніть увагу на такі моменти:
 
-1. While some distributions set up Redis with a more restrictive configuration, Redis by default listens to all interfaces, which is especially dangerous when a server is open to the public. Some suggestions:
-    * Set `bind_address` to `127.0.0.1` so as to restrict access  to the local machine only
-    * Use `requirepass` to secure Redis behind a password (preferably a long one)
-    * Familiarise yourself with [Redis Security](http://redis.io/topics/security)
-2. Use `iptables` to secure your server from unintended open ports. In Ubuntu, `ufw` provides a friendlier interface to working with `iptables`.
-    * e.g. If your NodeBB is proxied, no ports should be open except 80 (and possibly 22, for SSH access)
+1. Хоча деякі дистрибутиви налаштовують Redis із більш суворими обмеженнями, за замовчуванням Redis прослуховує всі інтерфейси. Це особливо небезпечно, якщо сервер відкритий для публічного доступу. Кілька порад:
+    * Встановіть `bind_address` на `127.0.0.1`, щоб обмежити доступ лише локальною машиною
+    * Використовуйте `requirepass`, щоб захистити Redis паролем (бажано довгим)
+    * Ознайомтеся з розділом [Безпека Redis (Redis Security)](http://redis.io/topics/security)
+2. Використовуйте `iptables`, щоб захистити свій сервер від небажаних відкритих портів. В Ubuntu утиліта `ufw` надає зручніший інтерфейс для роботи з `iptables`.
+    * Наприклад: якщо ваш NodeBB працює через проксі-сервер, жодні порти не повинні бути відкриті, крім 80 (та, можливо, 22 для доступу через SSH)
 
 
-## Upgrading NodeBB
+## Оновлення NodeBB
 
-Detailed upgrade instructions are listed in [Upgrading NodeBB](https://docs.nodebb.org/configuring/upgrade/)
+Детальні інструкції з оновлення наведені у розділі [Оновлення NodeBB (Upgrading NodeBB)](https://docs.nodebb.org/configuring/upgrade/)
 
-## License
+## Ліцензія
 
-NodeBB is licensed under the **GNU General Public License v3 (GPL-3)** (http://www.gnu.org/copyleft/gpl.html).
+NodeBB ліцензується на умовах **GNU General Public License v3 (GPL-3)** (http://www.gnu.org/copyleft/gpl.html).
 
-Interested in a sublicense agreement for use of NodeBB in a non-free/restrictive environment? Contact us at sales@nodebb.org.
+Цікавить субліцензійна угода для використання NodeBB у комерційному чи обмеженому середовищі? Зв'яжіться з нами за адресою sales@nodebb.org.
 
-## More Information/Links
+## Більше інформації / Посилання
 
-* [Demo](https://try.nodebb.org)
-* [Developer Community](http://community.nodebb.org)
-* [Documentation & Installation Instructions](https://docs.nodebb.org)
-* [Help translate NodeBB](https://explore.transifex.com/nodebb/nodebb/)
-* [NodeBB Blog](https://nodebb.org/blog)
-* [Premium Hosting for NodeBB](https://www.nodebb.org/ "NodeBB")
-* Unofficial IRC community &ndash; channel `#nodebb` on Libera.chat
-* [Follow us on Twitter](http://www.twitter.com/NodeBB/ "NodeBB Twitter")
-* [Like us on Facebook](http://www.facebook.com/NodeBB/ "NodeBB Facebook")
+* [Демоверсія](https://try.nodebb.org)
+* [Спільнота розробників](http://community.nodebb.org)
+* [Документація та інструкції зі встановлення](https://docs.nodebb.org)
+* [Допомогти з перекладом NodeBB](https://explore.transifex.com/nodebb/nodebb/)
+* [Блог NodeBB](https://nodebb.org/blog)
+* [Преміумхостинг для NodeBB](https://www.nodebb.org/ "NodeBB")
+* Неофіційна IRC-спільнота &ndash; канал `#nodebb` на Libera.chat
+* [Стежте за нами в Twitter](http://www.twitter.com/NodeBB/ "NodeBB Twitter")
+* [Поставте нам лайк на Facebook](http://www.facebook.com/NodeBB/ "NodeBB Facebook")
